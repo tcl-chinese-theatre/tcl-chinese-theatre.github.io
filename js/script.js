@@ -3,7 +3,18 @@
 =================================================== */
 if (window.innerWidth >= 1050) {
   // ローディング中テキスト
-  const loadingText = document.querySelector('#loading-text');
+  const loadingAreaMain = document.querySelector('#loading');
+  const keyframesAreaMain = {
+      visibility: 'hidden',
+  };
+  const optionsAreaMain = {
+    delay: 1200,
+    duration: 2000,
+    easing: 'ease',
+    fill: 'forwards',
+  };
+  
+  const loadingText = document.querySelector('#home');
   const keyframesText = [
     {
       opacity: 1,
@@ -34,13 +45,12 @@ if (window.innerWidth >= 1050) {
   };
 
   window.addEventListener('load', () => {
+    loadingAreaMain.animate(keyframesAreaMain, optionsAreaMain);
     loadingText.animate(keyframesText, optionsText);
     loadingAreaLeft.animate(keyframesArea, optionsArea);
     loadingAreaRight.animate(keyframesArea, optionsArea);
   });
 }
-
-
 
 
 /*
