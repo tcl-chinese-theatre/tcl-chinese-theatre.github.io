@@ -14,4 +14,4 @@ HTMLとCSSで作ったポートフォリオサイトです。
 
 ## 公開サイト
 
-https://〇〇.github.io/my-website/
+
