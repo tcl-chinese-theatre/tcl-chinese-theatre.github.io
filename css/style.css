@@ -219,7 +219,7 @@ nav {
 }
 
 /*
-SECTION__HOME
+SECTION__HOME(LOADING)
 ================================================ */
 .home {
     background-color: var(--primary-color);
@@ -540,7 +540,7 @@ DESKTOP SIZE
         transform-origin: right top;
     }
 
-    #loading-text {
+    #loading {
         position: fixed;
         z-index: 21;
         inset: 0;
